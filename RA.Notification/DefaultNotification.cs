@@ -6,10 +6,10 @@ namespace RA.Notification
 {
     public class DefaultNotification : INotification
     {
-        private readonly IConfiguration _configuration;
-        private readonly IChannelFactory _channelFactory;
+        private readonly INotificationConfiguration _configuration;
+        private readonly IDeliveryChannelFactory _channelFactory;
 
-        public DefaultNotification(IConfiguration configuration, IChannelFactory channelFactory)
+        public DefaultNotification(INotificationConfiguration configuration, IDeliveryChannelFactory channelFactory)
         {
             _configuration = configuration;
             _channelFactory = channelFactory;

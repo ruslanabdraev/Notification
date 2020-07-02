@@ -1,6 +1,6 @@
 ﻿namespace RA.Notification.Contract
 {
-    public interface IConfiguration
+    public interface INotificationConfiguration
     {
         ChannelSettings LoadSettings(NotificationType type);
     }
