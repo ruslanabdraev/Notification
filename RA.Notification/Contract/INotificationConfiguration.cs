@@ -2,7 +2,7 @@
 {
     public interface INotificationConfiguration
     {
-        ChannelSettings LoadSettings(NotificationType type);
+        ChannelSettings GetChannelSettings(NotificationType type);
     }
 
     public class ChannelSettings

@@ -17,7 +17,7 @@ namespace RA.Notification
 
         public async Task NotifyAsync(NotificationInfo info, NotificationType type)
         {
-            var settings = _configuration.LoadSettings(type);
+            var settings = _configuration.GetChannelSettings(type);
             var channel = _channelFactory.Create(settings, type);
 
             await channel.SendAsync(
